@@ -14,6 +14,7 @@ import androidx.compose.animation.core.infiniteRepeatable
 import androidx.compose.animation.core.rememberInfiniteTransition
 import androidx.compose.animation.core.spring
 import androidx.compose.animation.core.tween
+import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -91,6 +92,7 @@ fun SplashScreen(icon: ImageBitmap) {
 
 private class OnbPage(val emoji: String, val title: String, val text: String)
 
+@OptIn(ExperimentalFoundationApi::class)
 @Composable
 fun OnboardingScreen() {
     val ctx = LocalContext.current
