@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MODMASE</string>
+    <string name="shortcut_telegram_short">Join Telegram</string>
+    <string name="shortcut_telegram_long">Join MODMASE on Telegram</string>
+    <string name="shortcut_website_short">Website</string>
+    <string name="shortcut_website_long">Open modmase.vercel.app</string>
+    <string name="shortcut_apps_short">Apps</string>
+    <string name="shortcut_apps_long">Open the MODMASE apps library</string>
+    <string name="shortcut_tools_short">Tools</string>
+    <string name="shortcut_tools_long">Open the MODMASE toolbox</string>
+    <string name="widget_desc">Latest MODMASE update and a quick Telegram button</string>
+    <string name="widget_join">Join Telegram</string>
 </resources>

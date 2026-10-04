@@ -3,6 +3,12 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
+// Firebase push (FCM) is enabled automatically when app/google-services.json exists.
+// Without that file the app still builds and runs - push is simply inactive.
+if (file("google-services.json").exists()) {
+    apply(plugin = "com.google.gms.google-services")
+}
+
 android {
     namespace = "com.tanzirdev.modmase"
     compileSdk = 34
@@ -11,15 +17,14 @@ android {
         applicationId = "com.tanzirdev.modmase"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0.0"
+        versionCode = 2
+        versionName = "2.0.0"
     }
 
     buildTypes {
         release {
             isMinifyEnabled = false
             // Signed with the standard debug key so the release APK installs directly.
-            // Swap this for your own keystore when you publish to a store.
             signingConfig = signingConfigs.getByName("debug")
         }
     }
@@ -60,4 +65,9 @@ dependencies {
     implementation("androidx.compose.animation:animation")
     implementation("androidx.compose.material3:material3")
     implementation("androidx.compose.material:material-icons-core")
+
+    implementation(platform("com.google.firebase:firebase-bom:33.1.2"))
+    implementation("com.google.firebase:firebase-messaging")
+    implementation("com.airbnb.android:lottie-compose:6.4.1")
+    implementation("com.google.zxing:core:3.5.3")
 }

@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "922508660663",
+    "firebase_url": "https://modmase-default-rtdb.firebaseio.com",
+    "project_id": "modmase",
+    "storage_bucket": "modmase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:922508660663:android:234e88929803afcfc86232",
+        "android_client_info": {
+          "package_name": "com.tanzirdev.modmase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiVyF4djUp5XQp2UiYPf3C6_uSnY6YIRs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

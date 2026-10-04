@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="telegram"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_telegram"
+        android:shortcutShortLabel="@string/shortcut_telegram_short"
+        android:shortcutLongLabel="@string/shortcut_telegram_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://t.me/MODMASE" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="website"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_web"
+        android:shortcutShortLabel="@string/shortcut_website_short"
+        android:shortcutLongLabel="@string/shortcut_website_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:data="https://modmase.vercel.app" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="apps"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_apps"
+        android:shortcutShortLabel="@string/shortcut_apps_short"
+        android:shortcutLongLabel="@string/shortcut_apps_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tanzirdev.modmase"
+            android:targetClass="com.tanzirdev.modmase.MainActivity">
+            <extra android:name="open_tab" android:value="apps" />
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="tools"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_tools"
+        android:shortcutShortLabel="@string/shortcut_tools_short"
+        android:shortcutLongLabel="@string/shortcut_tools_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tanzirdev.modmase"
+            android:targetClass="com.tanzirdev.modmase.MainActivity">
+            <extra android:name="open_tab" android:value="tools" />
+        </intent>
+    </shortcut>
+</shortcuts>
