@@ -35,8 +35,11 @@ object Prefs {
         sp?.edit()?.putBoolean(key, v)?.apply()
     }
 
+    @JvmName("applyOnboarded")
     fun setOnboarded(v: Boolean) { onboarded = v; put("onboarded", v) }
+    @JvmName("applyHaptics")
     fun setHaptics(v: Boolean) { haptics = v; put("haptics", v) }
+    @JvmName("applyMaterialYou")
     fun setMaterialYou(v: Boolean) { materialYou = v; put("material_you", v) }
     fun setPush(v: Boolean) { pushEnabled = v; put("push", v) }
     fun setTopic(t: String, v: Boolean) { topics[t] = v; put("topic_$t", v) }
